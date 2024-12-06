@@ -1,0 +1,7 @@
+version: 0.1
+
+endpoints:
+  - name: nginx-lb
+    port: 8080
+    type: TCP
+    networkVisibility: Public
