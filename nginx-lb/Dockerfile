@@ -10,7 +10,7 @@ USER 10014
 
 COPY /data/default.conf /etc/nginx/conf.d/
 
-COPY /data/html /usr/share/nginx/html/
+COPY /data/index.html /usr/share/nginx/html/
 
 EXPOSE 8080
 
