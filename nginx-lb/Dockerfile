@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 RUN adduser \
     --disabled-password \
@@ -8,9 +8,7 @@ RUN adduser \
 
 USER 10014
 
-COPY /data-directory/default.conf /etc/nginx/conf.d/
-
-COPY /data-directory/index.html /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/
 
 EXPOSE 8080
 
