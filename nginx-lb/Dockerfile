@@ -2,8 +2,13 @@ FROM nginx:alpine
 
 WORKDIR /data
 
-RUN addgroup -g 10014 choreo && \
-    adduser  --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --uid 10014 \
+    "choreo"
+
+USER 10014
 
 COPY index.html /usr/share/nginx/html/
 
