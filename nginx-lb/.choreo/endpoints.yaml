@@ -4,3 +4,4 @@ endpoints:
   - name: nginx-rest-lb
     port: 8080
     type: REST
+    networkVisibility: Public
