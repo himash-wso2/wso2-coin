@@ -1,7 +1,6 @@
 version: 0.1
 
 endpoints:
-- name: nginx-rest-lb
-  service:
-     port: 8080
-  type: REST
+  - name: nginx-rest-lb
+    port: 8080
+    type: REST
