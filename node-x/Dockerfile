@@ -1,4 +1,4 @@
-FROM ethereum/client-go:alltools-v1.14.12
+FROM ethereum/client-go:alltools-v1.13.13
 
 # Install any needed packages
 RUN apk add --no-cache bash curl jq
