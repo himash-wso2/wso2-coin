@@ -14,4 +14,4 @@ endpoints:
       port: 30303
     type: UDP
     networkVisibilities:
-      - Public
+      - Project
